@@ -1,0 +1,28 @@
+# MATLAB
+*.asv
+*.m~
+*.mex*
+!external/qpSWIFT/*.mex*
+slprj/
+codegen/
+
+# Outputs
+results/rerun/*
+!results/rerun/.gitkeep
+figs/
+
+# Unpacked NMPC model (117 MB; the .gz is tracked)
+model/nmpc/*.casadi
+
+# Participant data must never be committed
+data/private/*
+!data/private/README.md
+
+# External dependencies installed locally (bundled qpSWIFT is tracked)
+external/*
+!external/qpSWIFT/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

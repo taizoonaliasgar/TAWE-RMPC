@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "TAWE-RMPC: Robust MPC for a tremor-suppression wrist exoskeleton"
+type: software
+license: MIT
+authors:
+  - family-names: Chunawala
+    given-names: Taizoon
+    affiliation: Virginia Tech
+  - family-names: Janakaraj
+    given-names: Sudarsana
+    affiliation: Virginia Tech
+  - family-names: Decker
+    given-names: Jeremy
+    affiliation: Virginia Tech
+  - family-names: Ahmad
+    given-names: Muneeb
+    affiliation: Virginia Tech
+  - family-names: Vijayan
+    given-names: Sujith
+    affiliation: Virginia Tech
+  - family-names: Barry
+    given-names: Oumar
+    affiliation: Virginia Tech
+  - family-names: Akbari Hamed
+    given-names: Kaveh
+    affiliation: Virginia Tech
+preferred-citation:
+  type: article
+  title: "Robust Model Predictive Control of a Tremor-Suppression Exoskeleton under Tremor-Induced Disturbances"
+  journal: "ASME Journal of Dynamic Systems, Measurement, and Control"
+  # TODO: fill in year, volume, issue, pages and DOI once published
+  authors:
+    - family-names: Chunawala
+      given-names: Taizoon
+    - family-names: Janakaraj
+      given-names: Sudarsana
+    - family-names: Decker
+      given-names: Jeremy
+    - family-names: Ahmad
+      given-names: Muneeb
+    - family-names: Vijayan
+      given-names: Sujith
+    - family-names: Barry
+      given-names: Oumar
+    - family-names: Akbari Hamed
+      given-names: Kaveh
