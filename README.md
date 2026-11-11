@@ -123,10 +123,10 @@ Things to know when rerunning:
   bit-identical with, the published numbers. For Table 3,
   `build_uncertainty_set(nW)` regenerates the 5- and 6-vertex sets in the same
   way.
-- **Randomness.** The original delay and noise runs were not seeded, which
-  likely accounts for the small Table 4 differences. All scripts now call
-  `rng(seed)` (default `0`), so reruns are repeatable but will not exactly match
-  the original realizations.
+- **Randomness.** The delay and noise studies use random realizations, which
+  accounts for the small Table 4 differences. All scripts call `rng(seed)`
+  (default `0`), so reruns are repeatable but use different realizations from
+  the published runs.
 - **Fig. 10.** Figs. 10–11 are redrawn from the runs reported in Table 4, so
   small visual differences from the printed figures are possible.
 - **Vertex weighting.** The normalized weights from `compute_vertex_weights`
