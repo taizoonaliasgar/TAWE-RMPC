@@ -111,7 +111,7 @@ from each saved run (`compute_rmse_tables`):
 |---|---|
 | Table 2 (all controllers) | within ±0.001 |
 | Table 3, n_W = 4 and 5 | within ±0.001 |
-| Table 3, n_W = 6 | 0.070 / 0.041 (typo in the paper; correction requested) |
+| Table 3, n_W = 6 | 0.070 / 0.041 (to be updated in the published version) |
 | Table 4, experimental | within ±0.001 |
 | Table 4, delay | within ±0.002 (see *Randomness*) |
 | Table 4, noise | within ±0.006 (see *Randomness*) |
