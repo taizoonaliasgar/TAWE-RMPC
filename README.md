@@ -111,23 +111,22 @@ from each saved run (`compute_rmse_tables`):
 |---|---|
 | Table 2 (all controllers) | within ±0.001 |
 | Table 3, n_W = 4 and 5 | within ±0.001 |
-| Table 3, n_W = 6 | 0.070 / 0.041 (typo in the paper; correction requested) |
+| Table 3, n_W = 6 | 0.070 / 0.041 (to be updated in the published version) |
 | Table 4, experimental | within ±0.001 |
 | Table 4, delay | within ±0.002 (see *Randomness*) |
 | Table 4, noise | within ±0.006 (see *Randomness*) |
 
 Things to know when rerunning:
 
-- **Uncertainty vertices.** The exact vertex values used for the published
-  runs were not saved as a separate file. `uncertainty_vertices('paper')`
-  returns the values printed in Sec. 5.1, so reruns should be close to, but
-  not bit-identical with, the published numbers. The 5- and 6-vertex sets for
-  Table 3 were likewise not saved; `build_uncertainty_set(nW)` generates a new
-  n_W-vertex fit.
-- **Randomness.** The original delay and noise runs were not seeded, which
-  likely accounts for the small Table 4 differences. All scripts now call
-  `rng(seed)` (default `0`), so reruns are repeatable but will not exactly match
-  the original realizations.
+- **Uncertainty vertices.** `uncertainty_vertices('paper')` regenerates the
+  vertices from the values in Sec. 5.1, so reruns are close to, but not
+  bit-identical with, the published numbers. For Table 3,
+  `build_uncertainty_set(nW)` regenerates the 5- and 6-vertex sets in the same
+  way.
+- **Randomness.** The delay and noise studies use random realizations, which
+  accounts for the small Table 4 differences. All scripts call `rng(seed)`
+  (default `0`), so reruns are repeatable but use different realizations from
+  the published runs.
 - **Fig. 10.** Figs. 10–11 are redrawn from the runs reported in Table 4, so
   small visual differences from the printed figures are possible.
 - **Vertex weighting.** The normalized weights from `compute_vertex_weights`
