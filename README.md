@@ -143,7 +143,11 @@ Things to know when rerunning:
 This material is based upon work supported by the National Science Foundation
 under Grant No. 2306984. The multibody modeling library in `lib/ANDY/` and the
 original TAWE model were developed by Jiamin Wang and Oumar Barry
-(Robotics & Mechatronics Lab, Virginia Tech).
+(Robotics & Mechatronics Lab, Virginia Tech), introduced in:
+
+> J. Wang and O. R. Barry, "Multibody Analysis and Control of a Full-Wrist
+> Exoskeleton for Tremor Alleviation," *Journal of Biomechanical Engineering*,
+> vol. 142, no. 12, 121008, 2020. [doi:10.1115/1.4047424](https://doi.org/10.1115/1.4047424)
 
 ## Citation
 
