@@ -6,11 +6,25 @@ MATLAB code for the paper
 > **"Robust Model Predictive Control of a Tremor-Suppression Exoskeleton under Tremor-Induced Disturbances,"**
 > *ASME Journal of Dynamic Systems, Measurement, and Control* (accepted).
 
-The repository contains the 9-DoF constrained arm–exoskeleton model of the
-Tremor Alleviating Wrist Exoskeleton (TAWE), the proposed robust MPC (RMPC)
-with state-dependent vertex weighting, the three baselines (nominal MPC,
-nonlinear MPC, MPC with a nonlinear disturbance observer), and the scripts
-and saved results behind the simulation figures and tables in the paper.
+This repository implements a robust model predictive controller (RMPC) for the
+Tremor Alleviating Wrist Exoskeleton (TAWE) that suppresses tremor while
+tracking voluntary wrist motion.
+
+**Contributions of this work**
+
+- **Robust MPC over tremor uncertainty.** The controller plans against a convex
+  set of worst-case tremor disturbances rather than a single estimate.
+- **Uncertainty-set construction.** A method to define the vertices of that set
+  from offline tremor analysis.
+- **State-dependent vertex weighting.** Weights that adapt to the current state
+  to correct directionally against tremor, solved as a QP in real time.
+- **Evaluation.** Comparison with nominal MPC, nonlinear MPC, and MPC with a
+  nonlinear disturbance observer: 20–33% lower tracking error than the
+  observer-based MPC, and up to 47% on patient-derived tremor, in simulation.
+
+The repository includes the controller, the three baselines, the
+arm–exoskeleton model used for simulation, and the scripts and saved results
+behind the figures and tables in the paper.
 
 ## Status
 
@@ -143,7 +157,8 @@ Things to know when rerunning:
 This material is based upon work supported by the National Science Foundation
 under Grant No. 2306984. The multibody modeling library in `lib/ANDY/` and the
 original TAWE model were developed by Jiamin Wang and Oumar Barry
-(Robotics & Mechatronics Lab, Virginia Tech).
+(Robotics & Mechatronics Lab, Virginia Tech;
+[doi:10.1115/1.4047424](https://doi.org/10.1115/1.4047424)).
 
 ## Citation
 
