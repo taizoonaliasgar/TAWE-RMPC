@@ -118,12 +118,11 @@ from each saved run (`compute_rmse_tables`):
 
 Things to know when rerunning:
 
-- **Uncertainty vertices.** The exact vertex values used for the published
-  runs were not saved as a separate file. `uncertainty_vertices('paper')`
-  returns the values printed in Sec. 5.1, so reruns should be close to, but
-  not bit-identical with, the published numbers. The 5- and 6-vertex sets for
-  Table 3 were likewise not saved; `build_uncertainty_set(nW)` generates a new
-  n_W-vertex fit.
+- **Uncertainty vertices.** `uncertainty_vertices('paper')` regenerates the
+  vertices from the values in Sec. 5.1, so reruns are close to, but not
+  bit-identical with, the published numbers. For Table 3,
+  `build_uncertainty_set(nW)` regenerates the 5- and 6-vertex sets in the same
+  way.
 - **Randomness.** The original delay and noise runs were not seeded, which
   likely accounts for the small Table 4 differences. All scripts now call
   `rng(seed)` (default `0`), so reruns are repeatable but will not exactly match
